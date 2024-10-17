@@ -1,17 +1,32 @@
+# API Test Instructions
+
+## Steps to Run API Tests
+
+### Step 1: Start MySQL Local Instance
+Ensure that your MySQL local instance is running.
+
+### Step 2: Create `.env` File
+In the root of your project, create a `.env` file.
+
+### Step 3: Set Environment Variables
+Add the following environment variables to the `.env` file:
+- `DB_USER` – Your MySQL username.
+- `DB_PASSWORD` – Your MySQL password.
+- `DATABASE` – The name of the database you are using.
+
+### Step 4: Run Backend Tests
+Navigate to the `backend_test` directory and run the following command:
+```bash
+npm start
+
+### Step 5: Split Terminal
+Open a new terminal or split the existing one to manage additional tasks
 
 
-to run api test :
+###  Step 6: Execute API Test Commands
+# You can test the API using the following curl commands or paste them into Postman to see the output
 
-step 1 : start mysql local instance 
-step 2 : create .env file 
-step 3 : set following 3 environment variables naming as 
-          1) DB_USER  , 2) DB_PASSWORD , 3) DATABASE
-
-step 4 : run following command in backend_test directory : npm start 
-step 5 : split terminal 
-step 6 : you can run following curl command or you can pase curl command in postman to see output 
-
- # Get employed count
+# Get employed count
 curl -X GET http://localhost:3000/api/getEmployedCount
 
 # Get retired count
@@ -55,7 +70,4 @@ curl -X GET http://localhost:3000/api/getRemoteLocationCount
 
 # Get workplace location count
 curl -X GET http://localhost:3000/api/getWorkplaceLocationCount
-
-         
-
 
