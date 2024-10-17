@@ -15,9 +15,7 @@ Add the following environment variables to the `.env` file:
 - `DATABASE` – The name of the database you are using.
 
 ### Step 4: Run Backend Tests
-Navigate to the `backend_test` directory and run the following command:
-```bash
-npm start
+Navigate to the `backend_test` directory and run the following command: npm start
 
 ### Step 5: Split Terminal
 Open a new terminal or split the existing one to manage additional tasks
